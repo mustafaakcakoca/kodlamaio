@@ -20,7 +20,7 @@ public class Product {
     }
 
 
-    public String get_name() {
+    public String get_name(String laptop) {
         return _name;
     }
 
@@ -61,12 +61,11 @@ public class Product {
     }
 
     public String get_kod() {
-        return _kod;
+        return this._name.substring(0,1)+_id;
+
     }
 
-    public void set_kod(String _kod) {
-        this._kod = _kod;
-    }
+
 
     public int get_id() {
         return _id;
